@@ -21,13 +21,15 @@ class [component_name] extends React.Component {
 	
 	render() {
 		return (
-		
+			<div>Hello from inside the [component_name]</div>
 		);
 	}
 }
 
 export default [component_name];
 ```
+  - Remember to import your component into index.jsx
+
 ### Second Component
 
 - My second component, ParentComp, imported ColinsComp.  It is just like importing the other components into index.jsx. 
@@ -46,3 +48,7 @@ return (
 );	
 ```
 - Now I need to play with state.  Maybe a "product" component where each item has a name and price.
+
+### Third Component
+
+- Building a static state component is easy but how do I take in input?  

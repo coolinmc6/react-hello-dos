@@ -69,6 +69,10 @@
 	
 	var _ParentComp2 = _interopRequireDefault(_ParentComp);
 	
+	var _ProductComponent = __webpack_require__(/*! ./ProductComponent.jsx */ 181);
+	
+	var _ProductComponent2 = _interopRequireDefault(_ProductComponent);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -104,7 +108,8 @@
 	          null,
 	          'Here is my ParentComp (a big group of ColinsComp\'s):'
 	        ),
-	        _react2.default.createElement(_ParentComp2.default, null)
+	        _react2.default.createElement(_ParentComp2.default, null),
+	        _react2.default.createElement(_ProductComponent2.default, null)
 	      );
 	    }
 	  }]);
@@ -22263,6 +22268,72 @@
 	}(_react2.default.Component);
 	
 	exports.default = ParentComp;
+
+/***/ },
+/* 181 */
+/*!*********************************************!*\
+  !*** ./src/client/app/ProductComponent.jsx ***!
+  \*********************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var ProductComponent = function (_React$Component) {
+		_inherits(ProductComponent, _React$Component);
+	
+		function ProductComponent(props) {
+			_classCallCheck(this, ProductComponent);
+	
+			var _this = _possibleConstructorReturn(this, (ProductComponent.__proto__ || Object.getPrototypeOf(ProductComponent)).call(this, props));
+	
+			_this.state = { name: 'XBox 360' };
+			return _this;
+		}
+	
+		_createClass(ProductComponent, [{
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					null,
+					_react2.default.createElement(
+						'div',
+						null,
+						'Hello from inside the ProductComponent'
+					),
+					_react2.default.createElement(
+						'div',
+						null,
+						'Product Name: ',
+						this.state.name,
+						' '
+					)
+				);
+			}
+		}]);
+	
+		return ProductComponent;
+	}(_react2.default.Component);
+	
+	exports.default = ProductComponent;
 
 /***/ }
 /******/ ]);

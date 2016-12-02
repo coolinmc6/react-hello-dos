@@ -3,6 +3,7 @@ import {render} from 'react-dom';
 import AwesomeComponent from './AwesomeComponent.jsx';
 import ColinsComp from './ColinsComp.jsx';
 import ParentComp from './ParentComp.jsx';
+import ProductComponent from './ProductComponent.jsx';
 
 class App extends React.Component {
   render () {
@@ -13,6 +14,7 @@ class App extends React.Component {
     		<ColinsComp />
     		<p>Here is my ParentComp (a big group of ColinsComp's):</p>
     		<ParentComp />
+    		<ProductComponent />
     	</div>
 	);
   }
