@@ -61,6 +61,14 @@
 	
 	var _AwesomeComponent2 = _interopRequireDefault(_AwesomeComponent);
 	
+	var _ColinsComp = __webpack_require__(/*! ./ColinsComp.jsx */ 179);
+	
+	var _ColinsComp2 = _interopRequireDefault(_ColinsComp);
+	
+	var _ParentComp = __webpack_require__(/*! ./ParentComp.jsx */ 180);
+	
+	var _ParentComp2 = _interopRequireDefault(_ParentComp);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -89,7 +97,14 @@
 	          null,
 	          ' Hello React!'
 	        ),
-	        _react2.default.createElement(_AwesomeComponent2.default, null)
+	        _react2.default.createElement(_AwesomeComponent2.default, null),
+	        _react2.default.createElement(_ColinsComp2.default, null),
+	        _react2.default.createElement(
+	          'p',
+	          null,
+	          'Here is my ParentComp (a big group of ColinsComp\'s):'
+	        ),
+	        _react2.default.createElement(_ParentComp2.default, null)
 	      );
 	    }
 	  }]);
@@ -22112,6 +22127,142 @@
 	}(_react2.default.Component);
 	
 	exports.default = AwesomeComponent;
+
+/***/ },
+/* 179 */
+/*!***************************************!*\
+  !*** ./src/client/app/ColinsComp.jsx ***!
+  \***************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var ColinComp = function (_React$Component) {
+		_inherits(ColinComp, _React$Component);
+	
+		function ColinComp() {
+			_classCallCheck(this, ColinComp);
+	
+			return _possibleConstructorReturn(this, (ColinComp.__proto__ || Object.getPrototypeOf(ColinComp)).apply(this, arguments));
+		}
+	
+		_createClass(ColinComp, [{
+			key: 'render',
+			value: function render() {
+				return _react2.default.createElement(
+					'div',
+					null,
+					'Hello from Colin\'s first component!!'
+				);
+			}
+		}]);
+	
+		return ColinComp;
+	}(_react2.default.Component);
+	
+	exports.default = ColinComp;
+
+/***/ },
+/* 180 */
+/*!***************************************!*\
+  !*** ./src/client/app/ParentComp.jsx ***!
+  \***************************************/
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+	
+	var _react = __webpack_require__(/*! react */ 1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _ColinsComp = __webpack_require__(/*! ./ColinsComp.jsx */ 179);
+	
+	var _ColinsComp2 = _interopRequireDefault(_ColinsComp);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+	
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+	
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+	
+	var ParentComp = function (_React$Component) {
+		_inherits(ParentComp, _React$Component);
+	
+		function ParentComp() {
+			_classCallCheck(this, ParentComp);
+	
+			return _possibleConstructorReturn(this, (ParentComp.__proto__ || Object.getPrototypeOf(ParentComp)).apply(this, arguments));
+		}
+	
+		_createClass(ParentComp, [{
+			key: 'render',
+			value: function render() {
+				// No Iteration
+	
+				// return (
+				// 	<div>	
+				// 		<ColinsComp />
+				// 		<ColinsComp />
+				// 		<ColinsComp />
+				// 		<ColinsComp />
+				// 	</div>
+				// );
+	
+				// Iterate V1
+				// var rows = [], i = 0, len = 10;
+				//   while (++i <= len) rows.push(i);
+				//   return (
+				//     <div>
+				//       {rows.map(function (i) {
+				//         return <ColinsComp key={i} index={i} />;
+				//       })}
+				//     </div>
+				// 	);
+	
+	
+				// Iterate V2
+				var rows = [];
+				for (var i = 0; i < 10; i++) {
+					rows.push(_react2.default.createElement(_ColinsComp2.default, { key: i }));
+				}
+				return _react2.default.createElement(
+					'div',
+					null,
+					rows
+				);
+			}
+		}]);
+	
+		return ParentComp;
+	}(_react2.default.Component);
+	
+	exports.default = ParentComp;
 
 /***/ }
 /******/ ]);
